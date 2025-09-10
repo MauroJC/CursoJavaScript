@@ -15,7 +15,7 @@ function mostrarReservas() {
         const li = document.createElement("li");
         li.textContent = `Reserva ${index + 1}: ${reserva.nombre} - ${reserva.cantidad} personas`;
         listaReservas.appendChild(li);
-    });
+    }); 
 
     // Total de mesas (cada reserva cuenta como 1 mesa)
     contadorMesas.textContent = "Total de mesas reservadas: " + reservas.length;
